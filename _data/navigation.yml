@@ -7,15 +7,19 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 
+# main links
 main:
+  - title: "Home"
+    url: /
+    
   - title: "Team"
     url: /team/
-
-  - title: "Adademics"
-    url: /academics/    
-
+    
+  - title: "Academics"
+    url: /academics/
+    
   - title: "Research"
-    url: /research/    
+    url: /research/
     
   - title: "Impressum"
     url: /impressum/

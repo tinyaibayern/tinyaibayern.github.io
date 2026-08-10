@@ -16,6 +16,31 @@ Projects developed by undergrad students using sensors, neural networks, and mic
 
 ---
 
+## Glider Thermal Centering AI Assistant
+
+The project develops a real-time thermal-centring assistant for glider pilots: a small Arduino Nano 33 BLE Sense reads IMU and barometric pressure in flight and, using a CNN running on the microcontroller itself, tells the pilot in real time what corrective action to take while circling in a thermal (Search, Enter, Steepen, Flatten, Hold). The repository contains the full end-to-end chain — from raw recorded flight data (IMU CSV + FLARM IGC track) through auto-labelling with Reichmann's decision tree, dataset generation, CNN training and TFLite deployment — plus both the recorder firmware and the inference firmware.
+
+**Team:**
+- Mark Franz, [franzma84803@th-nuernberg.de](mailto:franzma84803@th-nuernberg.de)
+- Paul Nagel, [nagelpa103038@th-nuernberg.de](mailto:nagelpa103038@th-nuernberg.de)
+
+![Glider Thermic AI Detector](/images/academics/tinyml-thermic-detector.jpg)
+
+---
+
+## TinyPong IMU and Audio Fusion
+
+TinyPong uses embedded IMU-based movement neural network classification fused with embedded audio-based ball sound neural network classification to create an interactive table tennis game for one or two players. The game is based on quick time events as well as a replay system.
+
+**Team:**
+- Tobias Mack, [arslandi84289@th-nuernberg.de](mailto:arslandi84289@th-nuernberg.de)
+- Luca Bauernfeind, [bauernfeindlu104536@th-nuernberg.de](mailto:bauernfeindlu104536@th-nuernberg.de)
+- Dilara Arslan, [mackto106280@th-nuernberg.de](mailto:mackto106280@th-nuernberg.de)
+
+![Ping Pong](/images/academics/tinyml-pingpong.jpg)
+
+---
+
 ## Embedded Perception-Language-Action Model for Robotics
 
 The goal of this project is to develop an Embedded Perception-Language-Action Model using ASR, LLM, and LiDAR for SLAM-based action planning and control in uncertain dynamic environments. The ROS 2 package for voice-controlled robot navigation and interaction includes voice feedback and environment awareness. The system utilises LiDAR (with the option of incorporating a camera at a later stage) for SLAM and world model construction, and receives motion instructions via voice commands. The voice feedback system utilises Text-to-Speech (TTS) technology. It employs a verification process to ascertain the feasibility of a requested action, as determined by the SLAM-based world model. If the action is deemed unfeasible, the system provides appropriate feedback to the user. Subsequently, the robot autonomously initiates navigation and driving commands.
@@ -29,9 +54,43 @@ The goal of this project is to develop an Embedded Perception-Language-Action Mo
 
 ---
 
+## Inverted pendulum TinyML PID behaviour cloner
+
+This project is a basic Neural Network for controlling an inverted pendulum by cloning the behaviour of a standard PID controller. It was trained on a sliding window of angle measurements and the corresponding output of a PID controller. Implementation is done for the RP2350 using the Pico SDK and the Edge Impulse Inference SDK.
+
+**Team:**
+- N. Mendl, [mendlni88972@th-nuernberg.de](mailto:mendlni88972@th-nuernberg.de)
+
+![Inverted Pendulum](/images/academics/tinyml-pendulum.jpg)
+
+---
+
+## Bouldering motion detector
+
+The project is a user experience upgrade on the Garmin Climbing app. The sensor data from the Garmin watch is relayed via a bridge to an Arduino Nano 33 BLE, on which a tiny neural network learning model runs; this model uses the sensor data to determine whether the user is currently climbing or not. This inference is then displayed in the app, presented visually over time, and the routes climbed are saved without the user having to manually press ‘Start’ for each route.
+
+**Team:**
+- Josefine Krauß, [kraussjo103942@th-nuernberg.de](mailto:kraussjo103942@th-nuernberg.de)
+- Peter Wienzek, [wienzekpe107414@th-nuernberg.de](mailto:wienzekpe107414@th-nuernberg.de)
+
+![Bouldering classifier](/images/academics/boulder-detector.jpg)
+
+---
+## Boardgame card detector
+
+Our ‘Magic Card Detection’ project provides the software for a Magic: The Gathering card sorting machine. This machine recognises cards and classifies them by colour. The project employed a convolutional neural network trained in Edge Impulse and deployed on the Arduino Nano BLE 33 Sense.
+
+**Team:**
+- Robert Carbonnier, [schmutzlersi87076@th-nuernberg.de](mailto:schmutzlersi87076@th-nuernberg.de)
+- Simon Schmutzler, [carbonnierro87753@th-nuernberg.de](mailto:carbonnierro87753@th-nuernberg.de)
+
+![Boardgame classifier](/images/academics/boardgame-tinyml.jpg)
+
+---
+
 ## TinyML Flight Mode Detector
 
-The goal of this project is to develop a microcontroller that can detect the different flight modes during the flight of a glider/sailplane. During the duration of one flight, the plane might be in one of the standard flight modes/phases: Pre take-off, Take-off, ..., Landing, Landed. The microcontroller should leverage a machine learning model that is trained to classify these flight modes by relying only on IMU data as well as the current air pressure. The IMU module measures acceleration and gyroscopic rotation in three axis whilst the pressure sensor measures the barometric pressure of the surrounding air (lower pressure means higher altitude). The project used an Arduino Nano 33 BLE Sense with a LSM9DS1 (IMU sensor), and a LPS22HB (barometer).
+The goal of this project is to develop a microcontroller that can detect the different flight modes during the flight of a glider/sailplane. During the duration of one flight, the plane might be in one of the standard flight modes/phases: Pre-take-off, Take-off, ..., Landing, Landed. The microcontroller should leverage a machine learning model that is trained to classify these flight modes by relying only on IMU data as well as the current air pressure. The IMU module measures acceleration and gyroscopic rotation in three axis whilst the pressure sensor measures the barometric pressure of the surrounding air (lower pressure means higher altitude). The project used an Arduino Nano 33 BLE Sense with a LSM9DS1 (IMU sensor), and a LPS22HB (barometer).
 
 **Team:**
 - Denis Engelhardt - [engelhardtde103270@th-nuernberg.de](mailto:engelhardtde103270@th-nuernberg.de)

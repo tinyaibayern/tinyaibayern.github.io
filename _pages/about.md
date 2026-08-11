@@ -13,3 +13,9 @@ Welcome to the TinyAI Bayern Initiative. This is a research outlet and showcase 
 
 
 [Prof. Dr. Cristian Axenie](https://www.th-nuernberg.de/person/axenie-cristian/) coordinates the effort from the [Technische Hochschule Nürnberg Georg Simon Ohm](https://www.th-nuernberg.de/).
+
+[Team](https://tinyaibayern.github.io/team/)
+
+[Research](https://tinyaibayern.github.io/research/)
+
+[Academics](https://tinyaibayern.github.io/academics/)
